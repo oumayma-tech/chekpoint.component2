@@ -1,6 +1,6 @@
-function Footer() {
+function Footer(props) {
     return( <footer>
-        <p>Copyritghts &copy; GOMYCODE 2020</p>
+        <p>{props.par}</p>
       </footer>)
     
 }

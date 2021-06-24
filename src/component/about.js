@@ -1,12 +1,12 @@
 import JohnDoe from '../images/John-Doe.jpg'
 
-function About() {
+function About(props) {
     return(
         <div>
             <h1>
-        Hello, my name is
-        <span class="rotate text-important">John doe</span>,<br />
-        and i make horrible websites.
+            {props.greet}
+        <span class="rotate text-important">{props.N}</span>,<br />
+        {props.P}
       </h1>
       <img class="avatar" src={JohnDoe} alt="jhon-doe" />
       </div>
